@@ -1,0 +1,73 @@
+{
+  "name": "simple-boilerplate-react",
+  "description": "Simple boilerplate react with craco",
+  "version": "0.1.0",
+  "private": true,
+  "repository": "git@github.com:franciscpd/simple-boilerplate-react.git",
+  "keywords": [
+    "js",
+    "react",
+    "bolerplate"
+  ],
+  "author": "Francisross Soares de Oliveira <franciscpd@gmail.com> (https://franciscpd.dev)",
+  "license": "MIT",
+  "dependencies": {
+    "@hot-loader/react-dom": "^16.13.0",
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/react": "^10.0.4",
+    "@testing-library/user-event": "^10.1.0",
+    "@types/dotenv": "^8.2.0",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "craco": "^0.0.3",
+    "craco-plugin-react-hot-reload": "^0.1.0",
+    "env-cmd": "^10.1.0",
+    "git-commit-msg-linter": "^2.4.2",
+    "husky": "^4.2.5",
+    "install": "^0.13.0",
+    "lint-staged": "^10.2.2",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-hot-loader": "^4.12.21",
+    "react-scripts": "3.4.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "prettier": "^2.0.5"
+  },
+  "scripts": {
+    "lint": "npx eslint src/**/*.js --fix",
+    "start": "craco start",
+    "build": "craco build",
+    "build:staging": "env-cmd -f .env.staging craco build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
