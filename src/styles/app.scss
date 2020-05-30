@@ -1,0 +1,11 @@
+$theme-colors: (
+    "primary": #731AB7,
+    "success": #63DC3E,
+);
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
